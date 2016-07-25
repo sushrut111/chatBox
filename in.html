@@ -1,0 +1,102 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+<script>
+function showUser() {
+      { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET","chats.php",true);
+        xmlhttp.send();
+    }
+}
+setInterval(showUser,3000);
+$i = 100;
+function chk(){
+  
+  document.getElementById("ck").innerHTML = $i++;
+}
+
+</script>
+<script s></script>
+<link rel="stylesheet" type="text/css" href="css/materialize.css">
+<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+<body>
+  <div class="row">	
+         <div>  
+
+
+
+
+<div class="col s10 m4">
+        <div class="card-panel deep-blue lighten-3">
+          <span class="white-text">
+<iframe  height="50"  width="300"  src="cards.php"></iframe>
+          </span>
+        </div>
+      </div>
+         </div>
+
+<div>
+
+<div class="col s10 m7">
+        <div class="card-panel deep-orange lighten-3">
+          <span class="white-text">
+ <b style="font-size:30px">Local Chatting Network</b>
+          </span>
+        </div>
+      </div>
+
+
+  </div>
+
+       </div>
+            
+             <div class="row">
+      <div class="col s10 m4">
+        <div class="card-panel deep-purple lighten-3">
+          <span class="white-text">
+<div id="txtHint">
+
+ <div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+          </span>
+        </div>
+      </div>
+  <div><iframe  height="400"  width="300" src="http://www.gooplusplus.com/dark-topic-head.html?h&ned=in&hl=hi# &#2361;&#2367;&#2306;&#2342;&#2368;&#160; (india)" ></iframe>
+    </div>
+
+
+</div>
+</body>
+</html>
+
+
